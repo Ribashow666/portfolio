@@ -594,11 +594,36 @@
     }
 
     @media (max-width: 768px) {
-      nav { padding: 16px 24px; }
-      #hero, section { padding-left: 24px; padding-right: 24px; }
-      .nav-links { display: none; }
-      footer { flex-direction: column; gap: 8px; text-align: center; }
-    }
+  body { cursor: auto; }
+  .cursor, .cursor-ring { display: none; }
+  nav { padding: 16px 20px; justify-content: center; }
+  .nav-links { display: none; }
+  #hero { padding: 100px 20px 80px; text-align: center; justify-content: center; }
+  .hero-content { max-width: 100%; }
+  .hero-name { font-size: clamp(44px, 14vw, 72px); letter-spacing: -2px; }
+  .hero-desc { font-size: 15px; max-width: 100%; }
+  .hero-ctas { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-outline { width: 100%; justify-content: center; max-width: 300px; }
+  .hero-bg-circle { width: 300px; height: 300px; }
+  section { padding: 64px 20px; }
+  .section-title { letter-spacing: -1px; margin-bottom: 36px; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .timeline-role { font-size: 18px; }
+  .edu-card { padding: 24px; }
+  .certs-grid { grid-template-columns: 1fr; gap: 12px; }
+  .contact-email { font-size: clamp(13px, 4vw, 20px); word-break: break-all; letter-spacing: 0; }
+  .social-links { flex-direction: column; align-items: center; gap: 12px; }
+  .social-link { width: 100%; max-width: 300px; justify-content: center; }
+  footer { flex-direction: column; gap: 8px; text-align: center; padding: 20px; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav, footer { padding-left: 36px; padding-right: 36px; }
+  section { padding: 80px 36px; }
+  #hero { padding: 120px 36px 80px; }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .certs-grid { grid-template-columns: repeat(2, 1fr); }
+}
   </style>
 </head>
 <body>
