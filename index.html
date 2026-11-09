@@ -3,10 +3,23 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Ailton Ribas — Dev</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />]
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ailton Ribas — Consultor ServiceNow</title>
+  <meta name="description"
+    content="Ailton Ribas, Consultor ServiceNow na EDX em Recife. ITSM, Service Catalog e Flow Designer, além de projetos full stack em JavaScript, TypeScript e Python." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="canonical" href="https://ailtonribas.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://ailtonribas.vercel.app/" />
+  <meta property="og:title" content="Ailton Ribas — Consultor ServiceNow" />
+  <meta property="og:description"
+    content="Consultor ServiceNow na EDX em Recife. ITSM, Service Catalog, Flow Designer e projetos full stack." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script>document.documentElement.classList.add('js');</script>
   <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
     rel="stylesheet" />
@@ -15,292 +28,390 @@
 
 <body>
 
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <nav>
-    <div class="nav-logo">AR_DEV</div>
+  <nav aria-label="Principal">
+    <a href="#hero" class="nav-logo">AR_DEV</a>
     <ul class="nav-links">
       <li><a href="#skills">skills</a></li>
-      <li><a href="#experience">experiência</a></li>
+      <li><a href="#experience">trajetória</a></li>
+      <li><a href="#projects">projetos</a></li>
       <li><a href="#education">formação</a></li>
       <li><a href="#certs">cursos</a></li>
       <li><a href="#contact">contato</a></li>
     </ul>
   </nav>
 
-  <section id="hero">
-    <div class="hero-bg-circle c1"></div>
-    <div class="hero-bg-circle c2"></div>
+  <main id="main">
+    <section id="hero">
+      <div class="hero-bg-circle c1"></div>
+      <div class="hero-bg-circle c2"></div>
 
-    <div class="hero-content">
-      <div class="hero-tag">DISPONÍVEL PARA OPORTUNIDADES</div>
-      <h1 class="hero-name">
-        Ailton<br /><span>Ribas</span>
-      </h1>
-      <p class="hero-role">// DESENVOLVEDOR FULL STACK</p>
-      <p class="hero-desc">
-        Estudante de Sistemas para Internet na Universidade Católica de Pernambuco. <br>
-        Bacharel em Sistemas de Informação no Centro Universitário Maurício de Nassau com experiência em desenvolvimento
-        web, mobile e automação. Apaixonado por construir soluções que resolvem problemas reais.
-      </p>
-      <div class="hero-ctas">
-        <a href="#contact" class="btn-primary">→ Entre em contato</a>
-        <a href="https://github.com/Ribashow666" target="_blank" class="btn-outline">⌥ GitHub</a>
-        <a href="https://www.linkedin.com/in/ailton-guilherme/" target="_blank" class="btn-outline">⌥ LinkedIn</a>
-      </div>
-    </div>
-
-    <div class="hero-scroll">
-      <span>SCROLL</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="section-label">// 01. HABILIDADES</div>
-    <h2 class="section-title reveal">Stack técnico</h2>
-
-    <div class="skills-grid reveal">
-      <div class="skill-category">
-        <div class="skill-category-title">LINGUAGENS</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
+      <div class="hero-content">
+        <div class="hero-tag">HOJE NA EDX · SETOR DE ENERGIA</div>
+        <h1 class="hero-name">
+          Ailton<br /><span>Ribas</span>
+        </h1>
+        <p class="hero-role">// CONSULTOR SERVICENOW</p>
+        <p class="hero-desc">
+          Faço a sustentação e a evolução da plataforma ServiceNow, com ITSM, Service Catalog e Flow Designer.
+          Bacharel em Sistemas de Informação e cursando Sistemas para Internet na UNICAP.
+          Nas horas vagas, sigo criando produtos full stack que resolvem problemas reais.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-primary">→ Entre em contato</a>
+          <a href="https://www.linkedin.com/in/ailton-guilherme/" target="_blank" rel="noopener" class="btn-outline">↗ LinkedIn</a>
+          <a href="https://github.com/Ribashow666" target="_blank" rel="noopener" class="btn-outline">↗ GitHub</a>
         </div>
       </div>
 
-      <div class="skill-category">
-        <div class="skill-category-title">FRAMEWORKS & LIBS</div>
-        <div class="skill-tags">
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">React Native</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Django</span>
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">Expo</span>
-          <span class="skill-tag">Flet</span>
-          <span class="skill-tag">PyAutoGUI</span>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-label">// 01. HABILIDADES</div>
+      <h2 class="section-title reveal">Stack técnico</h2>
+
+      <div class="skills-grid reveal">
+        <div class="skill-category featured">
+          <div class="skill-category-title">SERVICENOW</div>
+          <div class="skill-tags">
+            <span class="skill-tag">ITSM</span>
+            <span class="skill-tag">Service Catalog</span>
+            <span class="skill-tag">Flow Designer</span>
+            <span class="skill-tag">Business Rules</span>
+            <span class="skill-tag">Client Scripts</span>
+            <span class="skill-tag">UI Policies</span>
+            <span class="skill-tag">ACLs</span>
+            <span class="skill-tag">Forms &amp; Lists</span>
+            <span class="skill-tag">Notifications</span>
+            <span class="skill-tag">Platform Security</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-title">LINGUAGENS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-title">FRONT-END</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">React Native</span>
+            <span class="skill-tag">Expo</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Recharts</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-title">BACK-END &amp; AUTOMAÇÃO</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">APIs REST</span>
+            <span class="skill-tag">PyAutoGUI</span>
+            <span class="skill-tag">Flet</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-title">DADOS &amp; BI</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-title">DEVOPS &amp; FERRAMENTAS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">GitLab</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Postman</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-title">IDIOMAS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Português (nativo)</span>
+            <span class="skill-tag">Inglês (fluente)</span>
+            <span class="skill-tag">Italiano (básico)</span>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="skill-category">
-        <div class="skill-category-title">DADOS & BI</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Power BI</span>
-          <span class="skill-tag">Google Data Analytics</span>
-          <span class="skill-tag">SQL Queries</span>
+    <section id="experience">
+      <div class="section-label">// 02. EXPERIÊNCIA</div>
+      <h2 class="section-title reveal">Trajetória</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-period">SET 2026 — ATUAL</div>
+          <h3 class="timeline-role">Consultor ServiceNow</h3>
+          <div class="timeline-company">EDX</div>
+          <div class="timeline-desc">
+            Sustentação e evolução da plataforma ServiceNow no setor de energia. Automação de processos com Flow
+            Designer e construção de itens e fluxos no Service Catalog, em processos ITSM.
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-period">2024 — 2025</div>
+          <h3 class="timeline-role">Estagiário em Desenvolvimento</h3>
+          <div class="timeline-company">SES Soluções Empresariais em Sistemas LTDA</div>
+          <div class="timeline-desc">
+            Desenvolvimento e manutenção de sistemas internos em Python e JavaScript. Levantamento e documentação de
+            requisitos com stakeholders internos. Testes manuais e suporte a usuários, reduzindo chamados recorrentes.
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-period">2023 — 2024</div>
+          <h3 class="timeline-role">Suporte Técnico (Help Desk)</h3>
+          <div class="timeline-company">PaqTcPb — Fundação Parque Tecnológico da Paraíba</div>
+          <div class="timeline-desc">
+            Atendimento de chamados N1/N2, com diagnóstico e resolução de falhas de hardware e software. Apoio à
+            infraestrutura local, incluindo instalação e configuração de sistemas operacionais.
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="skill-category">
-        <div class="skill-category-title">DEVOPS & FERRAMENTAS</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">GitLab</span>
-          <span class="skill-tag">Postman</span>
-        </div>
-      </div>
+    <section id="projects">
+      <div class="section-label">// 03. PORTFÓLIO</div>
+      <h2 class="section-title reveal">Projetos em destaque</h2>
 
-      <div class="skill-category">
-        <div class="skill-category-title">IDIOMAS</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Português 🇧🇷</span>
-          <span class="skill-tag">Inglês 🇺🇸</span>
-          <span class="skill-tag">Italiano (básico) 🇮🇹</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="section-label">// 02. EXPERIÊNCIA</div>
-    <h2 class="section-title reveal">Onde já trabalhei</h2>
-
-    <div class="timeline">
-      <div class="timeline-item reveal">
-        <div class="timeline-period">2024 — 2025</div>
-        <div class="timeline-role">Estagiário em Desenvolvimento</div>
-        <div class="timeline-company">SES Soluções Empresariais em Sistemas LTDA</div>
-        <div class="timeline-desc">
-          Apoio no desenvolvimento e manutenção de sistemas corporativos. Participação ativa em atividades de
-          programação e suporte técnico. Colaboração com a equipe no levantamento e resolução de demandas técnicas.
-        </div>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="timeline-period">2023 — 2024</div>
-        <div class="timeline-role">Help Desk</div>
-        <div class="timeline-company">PaqTcPb — Fundação Parque Tecnológico da Paraíba</div>
-        <div class="timeline-desc">
-          Atendimento e suporte técnico a usuários. Diagnóstico e resolução de problemas de TI. Apoio à infraestrutura
-          tecnológica da fundação.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="education">
-    <div class="section-label">// 03. FORMAÇÃO</div>
-    <h2 class="section-title reveal">Educação</h2>
-
-    <div class="edu-card reveal">
-      <div class="edu-degree">Tecnólogo em Sistemas para Internet</div>
-      <div class="edu-school">Universidade Católica de Pernambuco</div>
-      <div class="edu-period">2026 — em andamento</div>
-    </div>
-
-    <div class="edu-card reveal">
-      <div class="edu-degree">Bacharel em Sistemas de Informação</div>
-      <div class="edu-school">Centro Universitário Maurício de Nassau</div>
-      <div class="edu-period">2022 — 2025</div>
-    </div>
-
-  </section>
-
-  <section id="certs">
-    <div class="section-label">// 04. CURSOS & CERTIFICAÇÕES</div>
-    <h2 class="section-title reveal">Aperfeiçoamento</h2>
-
-    <div class="certs-grid">
-      <div class="cert-card reveal">
-        <div class="cert-icon">📊</div>
-        <div class="cert-name">Certificado Profissional Google Data Analytics</div>
-        <div class="cert-source">COURSERA</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">📈</div>
-        <div class="cert-name">Intensivão de Power BI</div>
-        <div class="cert-source">HASHTAG TREINAMENTOS</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🐍</div>
-        <div class="cert-name">Jornada Python + Python Fundamental 1</div>
-        <div class="cert-source">HASHTAG / IFSC</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🤖</div>
-        <div class="cert-name">Inteligência Artificial I — Redes Neurais (40h)</div>
-        <div class="cert-source">IFTM</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🗄️</div>
-        <div class="cert-name">Banco de Dados 1: Fundamentos (20h)</div>
-        <div class="cert-source">IFRS</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🌐</div>
-        <div class="cert-name">Projeto de Sistemas Web (30h)</div>
-        <div class="cert-source">IFRS</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">⚙️</div>
-        <div class="cert-name">Automação de Sistemas (30h)</div>
-        <div class="cert-source">IFRS</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🔧</div>
-        <div class="cert-name">Manutenção de Computadores (20h)</div>
-        <div class="cert-source">IFRS</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">📐</div>
-        <div class="cert-name">Estrutura de Dados (20h)</div>
-        <div class="cert-source">IFRS</div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🔏</div>
-        <div class="cert-name">Softwares de Segurança da Informação (20h)</div>
-        <div class="cert-source">IFRS</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="section-label">// 05. PORTFÓLIO</div>
-    <h2 class="section-title reveal">Projetos em Destaque</h2>
-
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-content">
-          <div class="project-header">
-            <span class="project-folder">⚔️</span>
-            <div class="project-links">
-              <a href="https://github.com/Ribashow666/studyquest" target="_blank" title="Código Fonte">⌥ GitHub</a>
-              <a href="https://studyquest-rho.vercel.app" target="_blank" title="Live Demo">↗ Live</a>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-folder" aria-hidden="true">⚽</span>
+              <div class="project-links">
+                <a href="https://github.com/Ribashow666/bolao-copa-2026" target="_blank" rel="noopener">⌥ GitHub</a>
+                <a href="https://bolaomuitapaz.com.br" target="_blank" rel="noopener">↗ Live</a>
+              </div>
+            </div>
+            <h3 class="project-title">Bolão Muita Paz</h3>
+            <p class="project-text">
+              Bolão de futebol entre amigos, em produção com domínio próprio. Palpites travados no início do jogo,
+              ranking, chat, placar ao vivo e notificações push enviadas por um robô no GitHub Actions.
+            </p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Firebase</span>
+              <span>GitHub Actions</span>
+              <span>Netlify</span>
             </div>
           </div>
-          <h3 class="project-title">StudyQuest</h3>
-          <p class="project-text">
-            Plataforma RPG gamificada onde o aprendizado gera XP. Inclui sistema de classes (Mago, Guerreiro),
-            streaks diários, conquistas e ranking global. Arquitetura robusta com autenticação JWT e Docker.
-          </p>
-          <div class="project-tech">
-            <span>FastAPI</span>
-            <span>Next.js 14</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
-          </div>
         </div>
-      </div>
 
-      <div class="project-card reveal">
-        <div class="project-content">
-          <div class="project-header">
-            <span class="project-folder">💰</span>
-            <div class="project-links">
-              <a href="https://github.com/Ribashow666/dashboard_financeiro" target="_blank" title="Código Fonte">⌥
-                GitHub</a>
-              <a href="https://financaspro-app.vercel.app/" target="_blank" title="Live Demo">↗ Live</a>
+        <div class="project-card reveal">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-folder" aria-hidden="true">⚔️</span>
+              <div class="project-links">
+                <a href="https://github.com/Ribashow666/studyquest" target="_blank" rel="noopener">⌥ GitHub</a>
+                <a href="https://studyquest-rho.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+              </div>
+            </div>
+            <h3 class="project-title">StudyQuest</h3>
+            <p class="project-text">
+              Plataforma RPG gamificada onde o aprendizado gera XP, com classes, streaks diários, conquistas e ranking
+              global. API em FastAPI com autenticação JWT e rate limiting.
+            </p>
+            <div class="project-tech">
+              <span>Next.js 14</span>
+              <span>TypeScript</span>
+              <span>FastAPI</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
             </div>
           </div>
-          <h3 class="project-title">FinançasPRO</h3>
-          <p class="project-text">
-            Dashboard financeiro moderno com análise de dados em tempo real. Controle de metas,
-            gráficos de evolução patrimonial (Recharts), exportação CSV e interface responsiva com Tailwind v4.
-          </p>
-          <div class="project-tech">
-            <span>React</span>
-            <span>Vite</span>
-            <span>Tailwind v4</span>
-            <span>Recharts</span>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-folder" aria-hidden="true">📚</span>
+              <div class="project-links">
+                <a href="https://github.com/Ribashow666/lesson-planner" target="_blank" rel="noopener">⌥ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-title">Planejar</h3>
+            <p class="project-text">
+              Gerenciador de planos de aula com IA integrada para gerar conteúdos pedagógicos. API REST com paginação e
+              filtros, logs estruturados, CI no GitHub Actions e ambiente completo com Docker Compose.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>SQLite</span>
+              <span>Docker</span>
+              <span>OpenRouter</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-folder" aria-hidden="true">💰</span>
+              <div class="project-links">
+                <a href="https://github.com/Ribashow666/FinancasPRO" target="_blank" rel="noopener">⌥ GitHub</a>
+                <a href="https://financaspro-app.vercel.app/" target="_blank" rel="noopener">↗ Live</a>
+              </div>
+            </div>
+            <h3 class="project-title">FinançasPRO</h3>
+            <p class="project-text">
+              Dashboard financeiro pessoal com receitas, despesas, metas e projeção futura. Gráficos de evolução
+              patrimonial, exportação em CSV e modo claro e escuro.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Vite</span>
+              <span>Tailwind v4</span>
+              <span>Recharts</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <div class="contact-inner">
-      <div class="section-label">// 05. CONTATO</div>
-      <h2 class="section-title reveal">Vamos conversar</h2>
-      <p class="reveal" style="color: var(--muted); font-size: 15px; margin-bottom: 8px;">Aberto a oportunidades,
-        freelas e colaborações.</p>
-      <a href="mailto:guilherme_ribas12@hotmail.com" class="contact-email reveal">
-        guilherme_ribas12@hotmail.com
-      </a>
-      <div class="social-links reveal">
-        <a href="https://www.linkedin.com/in/ailton-guilherme/" target="_blank" class="social-link">
-          ↗ LinkedIn
-        </a>
-        <a href="https://github.com/Ribashow666" target="_blank" class="social-link">
-          ↗ GitHub
-        </a>
-        <a href="tel:+5581984553266" class="social-link">
-          ↗ (81) 98455-3266
-        </a>
+    <section id="education">
+      <div class="section-label">// 04. FORMAÇÃO</div>
+      <h2 class="section-title reveal">Educação</h2>
+
+      <div class="edu-card reveal">
+        <h3 class="edu-degree">Tecnólogo em Sistemas para Internet</h3>
+        <div class="edu-school">Universidade Católica de Pernambuco (UNICAP)</div>
+        <div class="edu-period">2026 — em andamento</div>
       </div>
-    </div>
-  </section>
+
+      <div class="edu-card reveal">
+        <h3 class="edu-degree">Bacharel em Sistemas de Informação</h3>
+        <div class="edu-school">Centro Universitário Maurício de Nassau</div>
+        <div class="edu-period">2022 — 2025</div>
+      </div>
+    </section>
+
+    <section id="certs">
+      <div class="section-label">// 05. CURSOS &amp; CERTIFICAÇÕES</div>
+      <h2 class="section-title reveal">Aperfeiçoamento</h2>
+
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">⚡</div>
+          <div class="cert-name">Academia de ServiceNow</div>
+          <div class="cert-source">PORTO DIGITAL</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">📊</div>
+          <div class="cert-name">Certificado Profissional Google Data Analytics</div>
+          <div class="cert-source">COURSERA</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">📈</div>
+          <div class="cert-name">Intensivão de Power BI</div>
+          <div class="cert-source">HASHTAG TREINAMENTOS</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">🐍</div>
+          <div class="cert-name">Jornada Python + Python Fundamental 1</div>
+          <div class="cert-source">HASHTAG / IFSC</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">🤖</div>
+          <div class="cert-name">Inteligência Artificial I — Redes Neurais (40h)</div>
+          <div class="cert-source">IFTM</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">🗄️</div>
+          <div class="cert-name">Banco de Dados 1: Fundamentos (20h)</div>
+          <div class="cert-source">IFRS</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">🌐</div>
+          <div class="cert-name">Projeto de Sistemas Web (30h)</div>
+          <div class="cert-source">IFRS</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">⚙️</div>
+          <div class="cert-name">Automação de Sistemas (30h)</div>
+          <div class="cert-source">IFRS</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">🔧</div>
+          <div class="cert-name">Manutenção de Computadores (20h)</div>
+          <div class="cert-source">IFRS</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">📐</div>
+          <div class="cert-name">Estrutura de Dados (20h)</div>
+          <div class="cert-source">IFRS</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon" aria-hidden="true">🔏</div>
+          <div class="cert-name">Softwares de Segurança da Informação (20h)</div>
+          <div class="cert-source">IFRS</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="section-label">// 06. CONTATO</div>
+        <h2 class="section-title reveal">Vamos conversar</h2>
+        <p class="reveal" style="color: var(--muted); font-size: 15px; margin-bottom: 8px;">Aberto a conversas sobre
+          ServiceNow, projetos e colaborações.</p>
+        <a href="mailto:guilherme_ribas12@hotmail.com" class="contact-email reveal">
+          guilherme_ribas12@hotmail.com
+        </a>
+        <div class="social-links reveal">
+          <a href="https://www.linkedin.com/in/ailton-guilherme/" target="_blank" rel="noopener" class="social-link">
+            ↗ LinkedIn
+          </a>
+          <a href="https://github.com/Ribashow666" target="_blank" rel="noopener" class="social-link">
+            ↗ GitHub
+          </a>
+          <a href="tel:+5581984553266" class="social-link">
+            ↗ (81) 98455-3266
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <span>© 2026 Ailton Ribas</span>
-    <span>Recife — PE 🇧🇷</span>
+    <span>Recife — PE</span>
   </footer>
 </body>
 

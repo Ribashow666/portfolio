@@ -6,7 +6,7 @@
       --accent2: #7c3aed;
       --accent3: #f59e0b;
       --text: #e8e8f0;
-      --muted: #6b6b80;
+      --muted: #9999aa;
       --border: rgba(255, 255, 255, 0.06);
     }
 
@@ -29,40 +29,52 @@
       scroll-behavior: smooth;
     }
 
+    html {
+      scroll-padding-top: 96px;
+    }
+
     body {
-      cursor: none;
       position: relative;
     }
 
 
-    .cursor {
-      width: 20px;
-      /* Aumentei um pouco para ficar mais visível como na foto */
-      height: 20px;
-      background: var(--accent);
+    .cursor,
+    .cursor-ring {
+      display: none;
       border-radius: 50%;
       position: fixed;
-      top: 0;
-      left: 0;
+      top: -100px;
+      left: -100px;
       pointer-events: none;
+    }
+
+    .cursor {
+      width: 20px;
+      height: 20px;
+      background: var(--accent);
       z-index: 9999;
-      /* O segredo do efeito da foto é este blend mode */
       mix-blend-mode: difference;
       transition: transform 0.2s ease;
     }
 
     .cursor-ring {
-      /* Se quiseres que o anel também inverta, usa difference aqui também. 
-     Se quiseres que ele suma ao passar no email, podes usar opacity 0 no JS. */
       width: 40px;
       height: 40px;
       border: 1px solid var(--accent);
-      border-radius: 50%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
       z-index: 9998;
+    }
+
+    @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+
+      .cursor,
+      .cursor-ring {
+        display: block;
+      }
+
+      .js body,
+      .js a {
+        cursor: none;
+      }
     }
 
 
@@ -98,6 +110,7 @@
       font-size: 14px;
       color: var(--accent);
       letter-spacing: 2px;
+      text-decoration: none;
     }
 
     .nav-links {
@@ -123,6 +136,7 @@
     #hero {
       position: relative;
       min-height: 100vh;
+      min-height: 100svh;
       display: flex;
       align-items: center;
       padding: 120px 48px 80px;
@@ -224,7 +238,7 @@
 
     .hero-desc {
       font-size: 17px;
-      color: #9999aa;
+      color: var(--muted);
       line-height: 1.7;
       max-width: 520px;
       margin-bottom: 48px;
@@ -376,8 +390,13 @@
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 2px;
+    }
+
+    .skill-category.featured {
+      grid-column: 1 / -1;
+      border-left: 3px solid var(--accent);
     }
 
     .skill-category {
@@ -483,17 +502,21 @@
 
     .timeline-desc {
       font-size: 14px;
-      color: #7777aa;
+      color: var(--muted);
       line-height: 1.8;
     }
 
 
     #education {
-      background: var(--surface);
+      background: var(--bg);
+    }
+
+    .edu-card + .edu-card {
+      margin-top: 16px;
     }
 
     .edu-card {
-      background: var(--bg);
+      background: var(--surface);
       border: 1px solid var(--border);
       padding: 40px;
       max-width: 600px;
@@ -533,7 +556,7 @@
 
 
     #certs {
-      background: var(--bg);
+      background: var(--surface);
     }
 
     .certs-grid {
@@ -543,7 +566,7 @@
     }
 
     .cert-card {
-      background: var(--surface);
+      background: var(--bg);
       border: 1px solid var(--border);
       padding: 24px;
       border-radius: 2px;
@@ -597,7 +620,7 @@
 
 
     #contact {
-      background: var(--surface);
+      background: var(--bg);
       text-align: center;
     }
 
@@ -665,39 +688,45 @@
     }
 
 
-    .reveal {
+    .js .reveal {
       opacity: 0;
       transform: translateY(30px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
 
-    .reveal.visible {
+    .js .reveal.visible {
       opacity: 1;
       transform: translateY(0);
     }
 
 
     @media (max-width: 768px) {
-      body {
-        cursor: auto;
-      }
-
-      .cursor,
-      .cursor-ring {
-        display: none;
+      html {
+        scroll-padding-top: 110px;
       }
 
       nav {
-        padding: 16px 20px;
+        padding: 10px 20px;
         justify-content: center;
       }
 
-      .nav-links {
+      .nav-logo {
         display: none;
       }
 
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px 18px;
+      }
+
+      .nav-links a {
+        display: inline-block;
+        padding: 6px 0;
+      }
+
       #hero {
-        padding: 100px 20px 80px;
+        padding: 120px 20px 80px;
         text-align: center;
         justify-content: center;
       }
@@ -728,7 +757,8 @@
         max-width: 300px;
       }
 
-      .hero-bg-circle {
+      .hero-bg-circle,
+      .hero-scroll {
         display: none;
       }
 
@@ -812,17 +842,17 @@
 
     
     #projects {
-      background: var(--bg);
+      background: var(--surface);
     }
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 24px;
     }
 
     .project-card {
-      background: var(--surface);
+      background: var(--bg);
       border: 1px solid var(--border);
       padding: 32px;
       position: relative;
@@ -849,6 +879,11 @@
       color: var(--accent);
     }
 
+    .project-links {
+      display: flex;
+      gap: 16px;
+    }
+
     .project-links a {
       font-family: 'Space Mono', monospace;
       font-size: 12px;
@@ -870,7 +905,7 @@
 
     .project-text {
       font-size: 15px;
-      color: #9999aa;
+      color: var(--muted);
       line-height: 1.6;
       margin-bottom: 24px;
       flex-grow: 1;
@@ -893,5 +928,56 @@
     @media (max-width: 768px) {
       .projects-grid {
         grid-template-columns: 1fr;
+      }
+    }
+
+    .skip-link {
+      position: fixed;
+      top: -60px;
+      left: 16px;
+      z-index: 200;
+      background: var(--accent);
+      color: #000;
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      padding: 10px 16px;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html,
+      body {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+
+      .hero-tag,
+      .hero-name,
+      .hero-role,
+      .hero-desc,
+      .hero-ctas,
+      .hero-scroll,
+      .js .reveal {
+        opacity: 1;
+        transform: none;
+      }
+
+      .hero-scroll {
+        transform: translateX(-50%);
       }
     }
